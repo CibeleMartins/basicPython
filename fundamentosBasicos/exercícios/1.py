@@ -3,10 +3,17 @@ def receiveBalance (string):
 
     print(string)
     transformBalanceInNumber = int(string)
-    
-    result = transformBalanceInNumber - 1000
 
-    print(f"Seu saldo atual é: {result}")
+    if (transformBalanceInNumber <= 0) :
+        print("Seu saldo está zerado.")
+    else :
+        result = transformBalanceInNumber - 1000
+
+        print(f"Seu saldo atual é: {result}")
 
 
-receiveBalance("1500")
+
+receiveBalance("500")
+
+
+
