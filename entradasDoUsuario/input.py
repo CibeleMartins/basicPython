@@ -15,13 +15,22 @@
 
 # exercício 2
 
-dia = input("Digite o dia: ")
-mes = input("Digite o mes: ")
-ano = input("Digite o ano: ")
-hora = input("Digite a hora: ")
-minuto = input("Digite o minuto: ")
+# dia = input("Digite o dia: ")
+# mes = input("Digite o mes: ")
+# ano = input("Digite o ano: ")
+# hora = input("Digite a hora: ")
+# minuto = input("Digite o minuto: ")
 
-print(f"A data e horário inseridos foram: {dia}/{mes}/{ano} e {hora}:{minuto}")
+# print(f"A data e horário inseridos foram: {dia}/{mes}/{ano} e {hora}:{minuto}")
 
+# exercício 3
+
+average, testNote = input("Insira sua média e sua nota da prova: ").split(',')
+
+if (int(average) >= 7 or int(testNote) >= 5) :
+    print("Aprovado!")
+
+else:
+    print("Reprovado.")
 
 
