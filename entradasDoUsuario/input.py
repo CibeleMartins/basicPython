@@ -1,4 +1,6 @@
-# O input server para receber entradas do usuário, 
+# O input serve para receber entradas do usuário,
+# ou pode receber mais de uma entrada; nesse caso deve ser
+# implementado em conjunto com o método split()
 
 receiveName = input("Digite o seu nome: ")
 print(f"O nome inserido foi: {receiveName}")
