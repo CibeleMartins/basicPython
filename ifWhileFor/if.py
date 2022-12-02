@@ -26,15 +26,38 @@ diga que a senha está incorreta"""
 ate 3 anos printe que vc 'um bebe, ate 13 anos uma crianca, ate 18 anos adolescente, ate 65 adulto. Em nenhum destes casos é
 um idoso."""
 
-idade = int(input("Digite sua idade: "))
+# idade = int(input("Digite sua idade: "))
 
-if idade <= 3:
-    print("Um bebe!")
-elif idade <= 13:
-    print("É uma criança!")
-elif idade <= 18:
-    print("É um adolescente!")
-elif idade <= 65:
-    print("É um adulto!")
-else:
-    print("É um idoso")
+# if idade <= 3:
+#     print("Um bebe!")
+# elif idade <= 13:
+#     print("É uma criança!")
+# elif idade <= 18:
+#     print("É um adolescente!")
+# elif idade <= 65:
+#     print("É um adulto!")
+# else:
+#     print("É um idoso")
+
+
+"""Crie um programa que receba 2 números, e também receba do usuário a operacao que deve ser feita: soma,
+subtracao, divisao e multiplicacao. Realize a operacao escolhida sobre os dois números."""
+
+def fazOperacao():
+
+    n1, n2 = map(int, input("Digite dois números: ").split())
+    operacao = input("Digite um sinal correspondente a operacao que deseja fazer com os números: ")
+
+    if operacao == "+":
+        return print(n1 + n2)
+    elif operacao == "-":
+        return print(n1 - n2)
+    elif operacao == "/":
+        return print(n1 // n2)
+    elif operacao == "*":
+        return print(n1 * n2)
+    else:
+        print("Não é possível realizar a operação!")
+
+
+fazOperacao()
