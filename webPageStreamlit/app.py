@@ -13,7 +13,7 @@ lottie_coding = loadAnimationLottie("https://assets2.lottiefiles.com/packages/lf
 
 st.set_page_config(page_title="Python Learning", page_icon=":tada:", layout="wide")
 
-button = """<button>Ver alguns conteúdos</button>"""
+button = """<button class="btn">Ver alguns conteúdos</button>"""
 
 def loadCss(file):
     with open(file) as f:
