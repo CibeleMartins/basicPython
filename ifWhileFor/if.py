@@ -12,12 +12,29 @@ Em seguida o programa deve dizer se voce tem saldo positivo ou negativo."""
 Em seguida receba por input uma senha do usuário. Caso a senha recebida seja a correta mostre o CPF, caso não,
 diga que a senha está incorreta"""
 
-cpf = "05567789956"
-senha = 123567
+# cpf = "05567789956"
+# senha = 123567
 
-senhaUsuario = input("Digite sua senha: ")
+# senhaUsuario = input("Digite sua senha: ")
 
-if int(senhaUsuario) == senha:
-    print(f"O seu CPF é: {cpf}")
-else :
-    print("Senha incorreta.")
+# if int(senhaUsuario) == senha:
+#     print(f"O seu CPF é: {cpf}")
+# else :
+#     print("Senha incorreta.")
+
+"""Crie um programa que fale sobre sua idade. As regras sao as seguintes: vc deve receber por input a idade, se vc tiver
+ate 3 anos printe que vc 'um bebe, ate 13 anos uma crianca, ate 18 anos adolescente, ate 65 adulto. Em nenhum destes casos é
+um idoso."""
+
+idade = int(input("Digite sua idade: "))
+
+if idade <= 3:
+    print("Um bebe!")
+elif idade <= 13:
+    print("É uma criança!")
+elif idade <= 18:
+    print("É um adolescente!")
+elif idade <= 65:
+    print("É um adulto!")
+else:
+    print("É um idoso")
