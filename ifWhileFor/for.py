@@ -43,7 +43,7 @@ quantos caracteres ela tem, nao leve em conta caracteres de espaço."""
 numero_recebido = input("Digite um número: ")
 numero_recebido_formatado = int(numero_recebido)
 
-for i in range(1, numero_recebido_formatado+1):
+for i in range(1, 11):
 
     print(f"{numero_recebido} / {i} = {numero_recebido_formatado / i}")
 
