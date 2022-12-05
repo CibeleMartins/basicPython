@@ -22,7 +22,6 @@ finalLista("TypeScript")
 # 2. Crie uma funcao que recebe um valor numerico e uma string. 
 # Após isso, insere a string no indice de uma lista representado pelo 
 # valor numerico recebido.
-
 def numeroString(numero, string):
 
     list = [34, 56, 78]
@@ -60,9 +59,28 @@ removeValorExistente("João")
 
 # 5. Crie uma funcao que recebe um array, um numero e uma string.
 # Após isso, insere a string no array em um indice representado pelo numero recebido.
+def insereStringIndex(array, numero, string):
+
+    array.insert(numero, string)
+
+    print(f"O valor inserido foi {string} no index {numero}. O array agora está assim: {array}")
+
+insereStringIndex([4, 5, 6, 7, 8], 2, "Texto")
 
 # 6. Crie uma funcao que recebe um valor e verifica quantas vezes esse valor tem em uma lista
 # E mostra uma mensagem de sucesso ou de falha com base na ocorrencia do valor dentro da lista.
 
+def quantasVezesValorLista(valor):
 
+    lista = list(['chocolate', 'sorvete', 'banana', 'maçã', 'chocolate', 'sorvete', 'banana', 'maçã', 'João'])
+
+    quantidade_vezes = lista.count(valor)
+
+    if (valor in lista):
+        print(f"Esse valor aparece na lista {quantidade_vezes} vezes e é {valor}")
+    else:
+        print(f"O {valor} não aparece nenhuma vez na lista.")
+
+quantasVezesValorLista('chocolate')
+quantasVezesValorLista('João')
 
