@@ -32,10 +32,31 @@ def numeroString(numero, string):
 numeroString(2, "String")
 
 # 3. Crie uma funcao que recebe um array e um numero. 
-# Após isso, remove um item do array com base no número recebeido.
+# Após isso, remove um item do array com base no número recebido.
+def removeItemArray(array, numero):
+
+    array.pop(numero)
+
+    print(f"O item no índice: {numero} foi removido. A lista agora está assim: {array}")
+
+removeItemArray([1,2,3,4,5,6,7,8,9,10,34,56,78], 6)
+
 
 # 4. Crie uma funcao que recebe um valor e, se esse valor existir em uma lista
 # será removido e mostrará uma mensagem de sucesso, caso contrário mostrará uma mensagem de erro.
+def removeValorExistente(valor):
+
+    list = ['Arroz', 'Feijão', 'Salada', 'Sorvete', 'Chocolate', 'Maçã']
+
+    if(valor in list):
+        list.remove(valor)
+        print(f"O valor {valor} existia na lista, então foi removido.")
+    else:
+        list.append(valor)
+        print(f"O valor não existia na lista, então foi adicionado.")
+
+removeValorExistente("Arroz")
+removeValorExistente("João")
 
 # 5. Crie uma funcao que recebe um array, um numero e uma string.
 # Após isso, insere a string no array em um indice representado pelo numero recebido.
