@@ -40,11 +40,25 @@ quantos caracteres ela tem, nao leve em conta caracteres de espaço."""
 
 """4. Crie um programa que printe a tabuada da divisão de um número lido por input."""
 
-numero_recebido = input("Digite um número: ")
-numero_recebido_formatado = int(numero_recebido)
+# numero_recebido = input("Digite um número: ")
+# numero_recebido_formatado = int(numero_recebido)
 
-for i in range(1, 11):
+# for i in range(1, 11):
 
-    print(f"{numero_recebido} / {i} = {numero_recebido_formatado / i}")
+#     print(f"{numero_recebido} / {i} = {numero_recebido_formatado / i}")
 
 """5. Crie um programa que percorra os números de 3 até 30 e diga se o número é primo ou não."""
+
+for i in range(3, 31):
+
+    e_primo = True
+
+    for num_teste in range(2, i):
+        if (i % num_teste == 0):
+            e_primo = False
+            break
+
+if e_primo:
+    print(f"O número {i} é primo")
+else:
+    print(f'O número {i} não é primo')
