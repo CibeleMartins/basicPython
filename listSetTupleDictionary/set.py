@@ -11,4 +11,6 @@ print(setAcoes, setNumeros)
 
 intersecao = setA.intersection(setB)
 diferenca = setA.difference(setB)
-print(intersecao, diferenca)
+uniao = setA.union(setB)
+
+print(intersecao, diferenca, uniao)
