@@ -11,9 +11,9 @@ def loadAnimationLottie(url):
 
 lottie_coding = loadAnimationLottie("https://assets2.lottiefiles.com/packages/lf20_tfb3estd.json")
 
-st.set_page_config(page_title="Python Learning", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="First Python Web", page_icon=":tada:", layout="wide")
 
-button = """<button class="btn">Ver alguns conteúdos</button>"""
+button = """<button class="btn"></button>"""
 
 def loadCss(file):
     with open(file) as f:
@@ -24,8 +24,7 @@ loadCss("style.css")
 with st.container():
     header, box = st.columns(2)
     with header:
-        st.header("Seja bem vindo ao Python Learning")
-        st.subheader("Aqui voce encontra conteúdos sobre python")
+        st.header("Primeira interface gráfica com Python")
         st.markdown(button, unsafe_allow_html=True)
     with box:
         st_lottie(lottie_coding, height=600)
