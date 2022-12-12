@@ -2,7 +2,6 @@
 # Recebea por input o nome de um objeto, se ele existir na lista imprima sua funca
 # se nao, informe ao usuário que nao existe
 
-
 objetos = {
     'Cadeira': 'Sentar',
     'Monitor': 'Assistir',
