@@ -41,6 +41,36 @@ def ultimoCaractere(string):
 
     return string[-1]
 
-print(ultimoCaractere("mercado"))
+# print(ultimoCaractere("mercado"))
 
 #  5 = Crie uma funcao que receba dois numeros e uma string dizendo se deve realizar a soma ou a subtracao dos numeros
+
+def calculadora(num1, num2, string):
+
+    def soma ():
+
+           resultado = num1 + num2
+
+           print(resultado)
+    
+    def subtracao ():
+
+            resultado = num1 - num2
+
+            # if num1 < num2:
+
+            #     resultado = num2 - num1
+
+            print(resultado)
+
+    if string.lower() == "soma":
+    
+        soma()
+
+    if string.lower() == "subtracao":
+        subtracao()
+
+calculadora(2, 5, "soma")
+calculadora(2, 5, "Soma")
+calculadora(2, 5, "SOMA")
+calculadora(2, 5, "Subtracao")
