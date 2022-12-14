@@ -31,7 +31,17 @@ foiEncontradoIndex(['mercado', 1, 2, 3], 'mercado')
 foiEncontradoIndex(['mercado', 1, 2, 3], 'sorvete')
 
 #  8 - Crie uma funcao que recebe um numero arbitrario de parametros. Em seguida diga qual o tipo de cada parametro
+def qualOTipo(*parametros):
 
+    for i in range(0, len(parametros)):
+
+        parametro = parametros[i]
+
+        tipo = type(parametro)
+
+        print(tipo)
+
+qualOTipo('sdgs', 90, 'sfgs', 9)
 # 9 - Crie uma funcao que receba uma string, mas que possua um decorator para transforma-la em uma citacao, ou seja,
 # voce deve retornar a string entre aspas duplas, alem disso, transformar os carateres para minuscula usando a funcao lower()
 
