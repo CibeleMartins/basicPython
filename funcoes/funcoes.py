@@ -25,7 +25,6 @@ def somaNumerosArray(array_numeros):
 # print(somaNumerosArray([2,3,4,90,80,900]))
     
 #  3 - Crie uma funcao que receba uma string e que conte e retorne o numero de vogais desta string
-
 def contaVogais(string):
 
     vogais = 'aeiou'
@@ -34,8 +33,14 @@ def contaVogais(string):
 
     print(f"A string tem {qtd_vogais} vogais.")
     
-contaVogais('cibele')
-contaVogais('bbbabbabbb')
-#  4 - Crie uma funcaao que retorne o ultimo caractere de uma string recebida
+# contaVogais('cibele')
+# contaVogais('bbbabbabbb')
 
-#  5 = Crie uma funcao que receba dois numeros e uam string dizendo se deve realizar a soma ou a subtracao dos numeros
+#  4 - Crie uma funcaao que retorne o ultimo caractere de uma string recebida
+def ultimoCaractere(string):
+
+    return string[-1]
+
+print(ultimoCaractere("mercado"))
+
+#  5 = Crie uma funcao que receba dois numeros e uma string dizendo se deve realizar a soma ou a subtracao dos numeros
