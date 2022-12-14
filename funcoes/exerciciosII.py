@@ -1,6 +1,18 @@
 # 6 - Crie uma funcao que receba uma lista de elementos e um valor qualquer. Em seguida retorne um booleano
 # dixendo se o valor foi encontradoou nao na lista
 
+def foiEncontrado(listaElementos, valorQualquer):
+
+    if valorQualquer in listaElementos:
+
+        return print(True)
+    else:
+
+        return print(False)
+
+foiEncontrado(['mercado', 1, 2, 3], 'mercado')
+foiEncontrado(['mercado', 1, 2, 3], 'sorvete')
+
 # 7 - Crie uma funcao que receba uma lista de elementos e um valor qualquer. Em seguida, retorne um booleano
 # dizendo se o valor foi encontrado ou nao e tambem a posicao onde foi encontrado
 
