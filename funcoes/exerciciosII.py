@@ -10,11 +10,25 @@ def foiEncontrado(listaElementos, valorQualquer):
 
         return print(False)
 
-foiEncontrado(['mercado', 1, 2, 3], 'mercado')
-foiEncontrado(['mercado', 1, 2, 3], 'sorvete')
+# foiEncontrado(['mercado', 1, 2, 3], 'mercado')
+# foiEncontrado(['mercado', 1, 2, 3], 'sorvete')
 
 # 7 - Crie uma funcao que receba uma lista de elementos e um valor qualquer. Em seguida, retorne um booleano
 # dizendo se o valor foi encontrado ou nao e tambem a posicao onde foi encontrado
+
+def foiEncontradoIndex(listaElementos, valorQualquer):
+
+    if valorQualquer in listaElementos:
+
+        index_valor = listaElementos.index(valorQualquer)
+
+        return print(f"{True} no indice {index_valor}")
+    else:
+
+        return print(False)
+
+foiEncontradoIndex(['mercado', 1, 2, 3], 'mercado')
+foiEncontradoIndex(['mercado', 1, 2, 3], 'sorvete')
 
 #  8 - Crie uma funcao que recebe um numero arbitrario de parametros. Em seguida diga qual o tipo de cada parametro
 
