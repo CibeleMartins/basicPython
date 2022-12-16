@@ -42,8 +42,9 @@ def qualOTipo(*parametros):
         print(tipo)
 
 qualOTipo('sdgs', 90, 'sfgs', 9)
+
 # 9 - Crie uma funcao que receba uma string, mas que possua um decorator para transforma-la em uma citacao, ou seja,
 # voce deve retornar a string entre aspas duplas, alem disso, transformar os carateres para minuscula usando a funcao lower()
 
-#  10 - Cria uma funcao recursiva que itere os numeros de 0 ate 10 e print o resultado de sua divisao inteira com onúmero 3.
+#  10 - Cria uma funcao recursiva que itere os numeros de 0 ate 10 e print o resultado de sua divisao inteira com o número 3.
 
