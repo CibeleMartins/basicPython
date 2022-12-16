@@ -1,23 +1,46 @@
 import streamlit as st
 
-st.header("Dashboard")
-st.sidebar.text("Escolha o que deseja filtrar")
+from streamlit_option_menu import option_menu
 
-# exibicao de dados
+# st.header("Dashboard")
+# st.sidebar.text("Escolha o que deseja filtrar")
 
-import pandas as pd
-import numpy as np
+# # exibicao de dados
 
-df = pd.DataFrame(
-    np.random.rand(10, 3),
-    columns= ['Ação', 'Aventura', 'Terror']
-)
+# import pandas as pd
+# import numpy as np
 
-
-# table o dataframe criam uma tabela
-# dataframe da a possibilidade de aumentar ou diminuir as colunas
-st.dataframe(df)
-st.table(df)
+# df = pd.DataFrame(
+#     np.random.rand(10, 3),
+#     columns= ['Ação', 'Aventura', 'Terror']
+# )
 
 
-st.line_chart(df)
+# # table o dataframe criam uma tabela
+# # dataframe da a possibilidade de aumentar ou diminuir as colunas
+# st.dataframe(df)
+# st.table(df)
+
+# # cria gráfico de linhas
+# st.line_chart(df)
+
+# # cria grafico de barras
+# st.bar_chart(df)
+
+
+# button = st.button("Ver filmes")
+
+# if button:
+
+#     st.header("Button clicado")
+
+# check = st.checkbox("Visto")
+
+
+with st.sidebar:
+
+    selected = option_menu(
+        menu_title=None,
+        options=["Ação", "Aventura", "Terror"],
+        icons=["film", "film", "film"]
+    )
