@@ -24,11 +24,14 @@ def soma(num1, num2):
 
 print(soma(6000, 5000))
 
-
-
 # 3 - (DESAFIO) Crie uma função que receba argumentos de tamanho arbitrário. Todos serão números.
-# Em seguida retorne o menor número entre todos os recebidos
+# Em seguida retorne o menor número entre todos os recebidos.
 
+def menorNumero(*args):
+
+    return print(min(args))
+
+menorNumero(1,3,4,5,6)
 # 4 - Crie uma funão que calcule a formula de Bhaskara, encontrado o X. 
 # Os coeficientes a, b e c devem ser lidos por input.
 
