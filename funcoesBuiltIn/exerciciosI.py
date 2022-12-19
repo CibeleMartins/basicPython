@@ -11,6 +11,21 @@ def valorAbsolutoSubtracao(elemento1, elemento2):
 # 2 -  Sem usar "if`s", crie uma função que receba dois números e retorne a soma dos mesmos, mas o valor retornado não pode passar 
 # de 10000 e deve ser sempre maior que 0.
 
+import math
+
+def soma(num1, num2):
+
+    soma = num1 + num2
+
+    soma = min(10000, soma)
+    soma = max(0, soma)
+
+    return soma
+
+print(soma(6000, 5000))
+
+
+
 # 3 - (DESAFIO) Crie uma função que receba argumentos de tamanho arbitrário. Todos serão números.
 # Em seguida retorne o menor número entre todos os recebidos
 
