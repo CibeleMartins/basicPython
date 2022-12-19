@@ -59,13 +59,24 @@ def decoratorCitacao(func):
     return fazCitacao
     
 @decoratorCitacao
-def recebeString(string):
+
+def transformaString(string):
 
     return string
 
-citacao = recebeString("Ola mundo cruelllll")
+citacao = transformaString("E quando eu estiver triste Simplesmente me abrace Quando eu estiver louco")
 print(citacao)
-
 
 #  10 - Cria uma funcao recursiva que itere os numeros de 0 ate 10 e print o resultado de sua divisao inteira com o número 3.
 
+def divisaoPorTres(num):
+
+    if num == 11:
+
+        return
+
+    print(num // 3)
+    
+    divisaoPorTres(num + 1)
+
+divisaoPorTres(0)
