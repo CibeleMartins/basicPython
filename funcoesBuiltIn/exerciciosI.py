@@ -1,5 +1,13 @@
 # 1 - Crie uma função que retorne a subtração de dois elementos, mas que considere o valor absoluto destes valores.
 
+def valorAbsolutoSubtracao(elemento1, elemento2):
+
+    subtracao = abs(elemento1) - abs(elemento2)
+
+    return print(subtracao)
+
+# valorAbsolutoSubtracao(-10, 20)
+
 # 2 -  Sem usar "if`s", crie uma função que receba dois números e retorne a soma dos mesmos, mas o valor retornado não pode passar 
 # de 10000 e deve ser sempre maior que 0.
 
