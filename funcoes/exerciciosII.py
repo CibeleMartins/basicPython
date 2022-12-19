@@ -46,5 +46,26 @@ qualOTipo('sdgs', 90, 'sfgs', 9)
 # 9 - Crie uma funcao que receba uma string, mas que possua um decorator para transforma-la em uma citacao, ou seja,
 # voce deve retornar a string entre aspas duplas, alem disso, transformar os carateres para minuscula usando a funcao lower()
 
+
+def decoratorCitacao(func):
+
+    def fazCitacao(string):
+
+        citacao = '"' + func(string).lower() + '"'
+
+        return citacao
+
+
+    return fazCitacao
+    
+@decoratorCitacao
+def recebeString(string):
+
+    return string
+
+citacao = recebeString("Ola mundo cruelllll")
+print(citacao)
+
+
 #  10 - Cria uma funcao recursiva que itere os numeros de 0 ate 10 e print o resultado de sua divisao inteira com o número 3.
 

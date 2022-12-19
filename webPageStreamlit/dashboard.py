@@ -1,9 +1,9 @@
 import streamlit as st
+import requests
 
 from streamlit_option_menu import option_menu
 
 # st.header("Dashboard")
-# st.sidebar.text("Escolha o que deseja filtrar")
 
 # # exibicao de dados
 
@@ -37,10 +37,7 @@ from streamlit_option_menu import option_menu
 # check = st.checkbox("Visto")
 
 
-with st.sidebar:
 
-    selected = option_menu(
-        menu_title=None,
-        options=["Ação", "Aventura", "Terror"],
-        icons=["film", "film", "film"]
-    )
+
+
+
