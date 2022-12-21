@@ -14,3 +14,29 @@ def qtdVezesLetra(string, letra):
         print(0)
 
 # qtdVezesLetra("Amanhã faz sol!!!", "A")
+
+#  7 (DESAFIO) Crie um função que receba uma string e uma letra do alfabeto. Retorne uma lista
+# contendo o índice de onde todas as ocorrencia aparecem.
+def indicesOcorrencias(string, letra):
+    
+   indices = []
+   indice = 0
+
+   string_minuscula = string.lower()
+
+   for i in string_minuscula.replace(' ', ''):
+
+    if  i == letra.lower():
+
+        indices.append(indice)
+        indice += 1
+    
+    print(indices)
+
+#    for i in range(0, qtd_vezes_letra):
+
+#     if letra.lower() in string_minuscula:
+
+#         print(string_minuscula[i])
+  
+indicesOcorrencias("hoje foi um dia bom!!!", "o")
