@@ -48,19 +48,14 @@ def indicesOcorrencias(string, letra):
 # contendo todas as palavras nao permitidas a serem digitadas. Essa funcao entao retornara o que foi digitado pelo usuário
 # mas no lugar das palavras nao permitidas retorna o caractere '*'
 
-def escondePalavroes():
+def escondePalavroes(chat, palavras):
 
-    chat = input("Digite uma frase com palavrões: ")
-
-    palavras_nao_permitidas = input("Insira as palavras nao permitidas que estavam na frase: ").split()
-    print(palavras_nao_permitidas)
-
-    for i in palavras_nao_permitidas:
+    for i in palavras:
 
         if i in chat:
 
-          oque_foi_digitado = chat.replace(i, "*")
+            chat = chat.replace(i, '*')
 
-    print(oque_foi_digitado)
+    print(chat)
 
-escondePalavroes()
+escondePalavroes("puta vc é um viado, lazarento", ['puta', 'viado', 'lazarento'])
