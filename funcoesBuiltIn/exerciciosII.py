@@ -24,12 +24,15 @@ def indicesOcorrencias(string, letra):
 
    string_minuscula = string.lower()
 
-   for i in string_minuscula.replace(' ', ''):
+   for i in string_minuscula:
 
     if  i == letra.lower():
 
         indices.append(indice)
-        indice += 1
+        # manda so os indices iguais a letra
+
+    indice += 1
+    # incrementa p/ cada index da string
     
     print(indices)
 
