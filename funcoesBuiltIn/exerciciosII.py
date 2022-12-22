@@ -42,4 +42,25 @@ def indicesOcorrencias(string, letra):
 
 #         print(string_minuscula[i])
   
-indicesOcorrencias("hoje foi um dia bom!!!", "o")
+# indicesOcorrencias("hoje foi um dia bom!!!", "o")
+
+#  8 - Crie uma função que receba o que foi digitado pelo usuário no chat e tambem uma lista
+# contendo todas as palavras nao permitidas a serem digitadas. Essa funcao entao retornara o que foi digitado pelo usuário
+# mas no lugar das palavras nao permitidas retorna o caractere '*'
+
+def escondePalavroes():
+
+    chat = input("Digite uma frase com palavrões: ")
+
+    palavras_nao_permitidas = input("Insira as palavras nao permitidas que estavam na frase: ").split()
+    print(palavras_nao_permitidas)
+
+    for i in palavras_nao_permitidas:
+
+        if i in chat:
+
+          oque_foi_digitado = chat.replace(i, "*")
+
+    print(oque_foi_digitado)
+
+escondePalavroes()
