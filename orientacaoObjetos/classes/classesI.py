@@ -1,6 +1,5 @@
 from pprint import pprint
 # 1
-
 class Pessoa :
 
     def __init__(self, nome, sobrenome, data_nascimento, email, senha):
@@ -16,14 +15,16 @@ class Pessoa :
 
         return print(f"{nome} acabou de criar uma conta em {url}")
 
-    def insere_mostra_pessoas(self, pessoa):
+    def insere_mostra_pessoas(self, *pessoas):
 
-        self.lista_pessoas.append(pessoa)
+        for pessoa in pessoas:
 
-        return print(self.lista_pessoas)
+            self.lista_pessoas.append(dict(nome = pessoa.nome, sobrenome=pessoa.sobrenome, data_nascimento=pessoa.data_nascimento, email=pessoa.email, senha=pessoa.senha))
+
+        return pprint(self.lista_pessoas)
 
         
 pessoa = Pessoa("Josh", "Henry", "09/08/1978", "henry_j@gmail.com", "hj67889")
-objeto_pessoa = dict(nome = pessoa.nome, sobrenome=pessoa.sobrenome, data_nascimento=pessoa.data_nascimento, email=pessoa.email, senha=pessoa.senha)
+pessoa1 = Pessoa("Mariano", "Silveira", "01/10/1979", "marianos@gmail.com", "ms999889")
 
-pprint(objeto_pessoa)
+pessoa.insere_mostra_pessoas(pessoa, pessoa1)
