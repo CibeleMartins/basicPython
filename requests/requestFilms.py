@@ -11,4 +11,4 @@ def receiveUrl(url):
     else:
         print(requisition.json())
 
-receiveUrl("http://www.omdbapi.com/?apikey=c74fdb88&t=spiderman")
+receiveUrl("http://www.omdbapi.com/?apikey=apiKey=spiderman")
