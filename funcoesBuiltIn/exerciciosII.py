@@ -59,3 +59,7 @@ def escondePalavroes(chat, palavras):
     print(chat)
 
 escondePalavroes("puta vc é um viado, lazarento", ['puta', 'viado', 'lazarento'])
+
+# 9 - Cire uma funcao que retorne verdadeiro se uma string é totalmente maiúscula ou totalmente minúscula
+
+# 10 - Leia por input sua data de nascimento no formato dia/mes/ano e mostre quantos dias voce ja viveu.
